@@ -84,6 +84,22 @@ footer{
 
 }
 
+.hero-title{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:24px;
+
+}
+
+.app-logo{
+
+    width:120px;
+    height:120px;
+    object-fit:contain;
+
+}
 </style>
 
 </head>
@@ -92,12 +108,26 @@ footer{
 
 <header>
 
-<div class="logo">
-MyTripNote
-</div>
+<div class="hero-title">
 
-<div class="sub">
-Travel. Record. Share.
+    <img
+        src="images/logo.png"
+        class="app-logo"
+        alt="MyTripNote Logo"
+    />
+
+    <div>
+
+        <div class="logo">
+            MyTripNote
+        </div>
+
+        <div class="sub">
+            Travel. Record. Share.
+        </div>
+
+    </div>
+
 </div>
 
 </header>
