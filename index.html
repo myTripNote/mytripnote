@@ -1,106 +1,21 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>MyTripNote</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<style>
+    <title>MyTripNote</title>
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#07182d;
-    color:white;
-}
-
-header{
-
-    padding:80px 20px;
-    text-align:center;
-
-    background:
-    linear-gradient(
-        135deg,
-        #0b3a70,
-        #04111f
-    );
-
-}
-
-.logo{
-
-    font-size:48px;
-    font-weight:bold;
-    color:#52b6ff;
-
-}
-
-.sub{
-
-    margin-top:20px;
-    font-size:22px;
-    color:#b8dfff;
-
-}
-
-section{
-
-    max-width:900px;
-    margin:auto;
-    padding:60px 30px;
-
-}
-
-.card{
-
-    background:#10243f;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    margin-bottom:25px;
-
-    box-shadow:
-    0 0 20px rgba(0,180,255,.2);
-
-}
-
-h2{
-
-    color:#6fd4ff;
-
-}
-
-footer{
-
-    padding:40px;
-    text-align:center;
-    color:#8fb2d6;
-
-}
-
-.hero-title{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:24px;
-
-}
-
-.app-logo{
-
-    width:120px;
-    height:120px;
-    object-fit:contain;
-
-}
-</style>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
 </head>
 
@@ -108,85 +23,310 @@ footer{
 
 <header>
 
-<div class="hero-title">
+    <div class="container">
 
-    <img
-        src="images/logo.png"
-        class="app-logo"
-        alt="MyTripNote Logo"
-    />
+        <div class="logo-area">
 
-    <div>
+            <img
+                src="images/logo.png"
+                alt="MyTripNote Logo"
+                class="logo"
+            >
 
-        <div class="logo">
-            MyTripNote
+            <div>
+
+                <h1>MyTripNote</h1>
+
+                <p class="subtitle">
+
+                    Travel. Record. Share.
+
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="sub">
-            Travel. Record. Share.
+        <nav>
+
+            <a href="#preview">Preview</a>
+
+            <a href="#features">Features</a>
+
+            <a href="privacy.html">Privacy</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="container">
+
+        <h2>
+
+            Record Every Journey
+
+        </h2>
+
+        <p>
+
+            여행의 모든 순간을 기록하고
+            친구들과 함께 공유하세요.
+
+        </p>
+
+        <a
+            href="#preview"
+            class="button"
+        >
+
+            View App
+
+        </a>
+
+    </div>
+
+</section>
+
+<section
+    id="preview"
+    class="preview"
+>
+
+    <div class="container">
+
+        <h2>
+
+            App Preview
+
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img
+                    src="images/HomeView.png"
+                    alt="HomeView"
+                >
+
+                <h3>
+
+                    Home
+
+                </h3>
+
+                <p>
+
+                    여행 앨범과 일정을 관리합니다.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="images/AlbumDetailView01.png"
+                    alt="AlbumDetailView"
+                >
+                <img
+                    src="images/AlbumDetailView02.png"
+                    alt="AlbumDetailView"
+                >
+
+                <h3>
+
+                    Album Detail
+
+                </h3>
+
+                <p>
+
+                    GPS 경로와 여행 정보를 확인합니다.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="images/AlbumStoryView.png"
+                    alt="AlbumStoryView"
+                >
+
+                <h3>
+
+                    Album Story
+
+                </h3>
+
+                <p>
+
+                    사진과 음성으로 여행 스토리를 만듭니다.
+
+                </p>
+
+            </div>
+
         </div>
 
     </div>
 
-</div>
+</section>
 
-</header>
+<section
+    id="features"
+    class="features"
+>
 
-<section>
+    <div class="container">
 
-<div class="card">
+        <h2>
 
-<h2>소개</h2>
+            Main Features
 
-<p>
+        </h2>
 
-MyTripNote는 여행 중의 GPS 이동경로,
-사진, 음성메모,
-친구와의 위치공유를 하나의 여행노트로
-기록하는 모바일 여행 애플리케이션입니다.
+        <div class="feature-grid">
 
-</p>
+            <div class="feature">
 
-</div>
+                <h3>
 
-<div class="card">
+                    📍 GPS Tracking
 
-<h2>주요 기능</h2>
+                </h3>
 
-<ul>
+                <p>
 
-<li>GPS 여행 경로 기록</li>
+                    Automatically records your travel routes.
 
-<li>사진 및 음성 메모</li>
+                </p>
 
-<li>친구 위치 공유</li>
+            </div>
 
-<li>여행 스토리 작성</li>
+            <div class="feature">
 
-<li>Presentation 자동 생성</li>
+                <h3>
 
-</ul>
+                    📷 Photo Story
 
-</div>
+                </h3>
 
-<div class="card">
+                <p>
 
-<h2>개발 상태</h2>
+                    Save beautiful travel memories.
 
-<p>
+                </p>
 
-현재 개발 중인 프로젝트입니다.
-정식 출시 예정.
+            </div>
 
-</p>
+            <div class="feature">
 
-</div>
+                <h3>
+
+                    🎤 Voice Memo
+
+                </h3>
+
+                <p>
+
+                    Record your moments by voice.
+
+                </p>
+
+            </div>
+
+            <div class="feature">
+
+                <h3>
+
+                    👥 Friend Share
+
+                </h3>
+
+                <p>
+
+                    Share your location with friends.
+
+                </p>
+
+            </div>
+
+            <div class="feature">
+
+                <h3>
+
+                    🎞 Presentation
+
+                </h3>
+
+                <p>
+
+                    Automatically create travel presentations.
+
+                </p>
+
+            </div>
+
+            <div class="feature">
+
+                <h3>
+
+                    ☁ Offline Support
+
+                </h3>
+
+                <p>
+
+                    Works even without an Internet connection.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 <footer>
 
-ⓒ 2026 MyTripNote
+    <div class="container">
+
+        <p>
+
+            © 2026 MyTripNote
+
+        </p>
+
+        <div class="footer-links">
+
+            <a href="privacy.html">
+
+                Privacy Policy
+
+            </a>
+
+            <span>|</span>
+
+            <a href="contact.html">
+
+                Contact
+
+            </a>
+
+        </div>
+
+    </div>
 
 </footer>
 
