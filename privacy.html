@@ -1,147 +1,308 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
->
-
-<title>Privacy Policy - MyTripNote</title>
-
-<link
-    rel="stylesheet"
-    href="style.css"
->
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>MyTripNote 개인정보처리방침</title>
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --card: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --line: #e7e7e2;
+      --accent: #2b6f66;
+      --soft: #eef6f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+                   "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height: 1.72;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 30px 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.04);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.3;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 26px;
+    }
+    h2 {
+      margin: 34px 0 12px;
+      padding-top: 4px;
+      font-size: 20px;
+      color: var(--accent);
+    }
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 16px;
+    }
+    p { margin: 8px 0 12px; }
+    ul { margin: 8px 0 14px; padding-left: 22px; }
+    li { margin: 5px 0; }
+    .notice {
+      background: var(--soft);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f4f5f2; }
+    a { color: var(--accent); }
+    .footer {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      main { padding: 16px 10px 36px; }
+      .card { padding: 22px 18px; border-radius: 14px; }
+      h1 { font-size: 25px; }
+      table { font-size: 13px; }
+    }
+  </style>
 </head>
-
 <body>
+<main>
+  <article class="card">
+    <h1>MyTripNote 개인정보처리방침</h1>
+    <div class="subtitle">시행일: 2026년 9월 27일</div>
 
-<header>
+    <p>
+      마이트립노트(이하 “운영자”)는 MyTripNote 앱 이용자의 개인정보와 위치정보를 중요하게 생각합니다.
+      MyTripNote는 여행 기록을 사용자의 기기에서 관리하는 것을 기본 원칙으로 하며,
+      운영자가 별도의 회원 서버나 여행기록 저장 서버를 운영하지 않습니다.
+    </p>
 
-    <div class="container">
-
-        <div class="logo-area">
-
-            <img
-                src="images/logo.png"
-                class="logo"
-                alt="Logo"
-            >
-
-            <div>
-
-                <h1>MyTripNote</h1>
-
-                <p class="subtitle">
-
-                    Travel. Record. Share.
-
-                </p>
-
-            </div>
-
-        </div>
-
+    <div class="notice">
+      <strong>핵심 안내</strong><br />
+      여행 일정, 이동 경로, 사진 정보, 음성인식 결과 등 주요 여행 기록은 원칙적으로 사용자의 기기 안에 저장됩니다.
+      동행자 위치 공유 기능은 Google Nearby Connections를 이용한 Bluetooth·Wi‑Fi 기반 근거리 통신 방식으로
+      주변 기기와 직접 데이터를 교환하며, 운영자의 서버에 동행자 위치를 저장하지 않습니다.
+      다만 광고, 음성인식, 지도 및 Google Play services 등 제3자 서비스는 각 서비스 제공 과정에서
+      일부 기기·네트워크·이용 정보를 처리할 수 있습니다.
     </div>
 
-</header>
+    <h2>1. 앱이 접근하거나 처리하는 정보</h2>
 
-<section class="features">
+    <h3>① 여행 및 위치 정보</h3>
+    <ul>
+      <li>여행 제목, 여행 기간, 여행 그룹, 여행 메모 및 스토리</li>
+      <li>GPS를 이용한 현재 위치, 이동 경로 및 위치 기록</li>
+      <li>사진 촬영 시 사진과 연결되는 위치정보</li>
+      <li>백그라운드 여행 경로 기록을 위해 필요한 위치정보</li>
+    </ul>
 
-    <div class="container">
+    <h3>② 사진 및 미디어 정보</h3>
+    <ul>
+      <li>사용자가 직접 촬영하거나 선택한 사진</li>
+      <li>사진 파일 경로, 촬영 시각, 사진과 연결된 위치정보 및 설명</li>
+      <li>사용자가 직접 만든 이미지·PDF·경로 JSON 등 내보내기 파일</li>
+    </ul>
 
-        <h2>
+    <h3>③ 음성 및 음성인식 정보</h3>
+    <ul>
+      <li>음성 명령 수행을 위한 마이크 입력</li>
+      <li>음성인식 결과로 변환된 텍스트</li>
+    </ul>
+    <p>
+      운영자는 음성 원본을 자체 서버에 저장하지 않습니다.
+      다만 Android 또는 기기에 설치된 음성인식 서비스의 구현 방식에 따라 음성 데이터가
+      음성인식 서비스 제공자의 서버로 전송되어 처리될 수 있습니다.
+    </p>
 
-            Privacy Policy
+    <h3>④ 동행자 근거리 공유 정보</h3>
+    <ul>
+      <li>사용자가 설정한 닉네임</li>
+      <li>공유 세션/방 식별값</li>
+      <li>현재 위치(위도·경도)</li>
+      <li>사용자가 전송한 메시지 또는 여행 이벤트 정보</li>
+    </ul>
+    <p>
+      이 정보는 동행자 위치 공유 기능을 사용하는 동안 주변의 연결된 기기 사이에서 전달됩니다.
+      운영자는 해당 위치·메시지를 운영자 서버에 수집하거나 저장하지 않습니다.
+    </p>
 
-        </h2>
+    <h2>2. 정보 이용 목적</h2>
+    <ul>
+      <li>여행 경로 기록 및 지도 표시</li>
+      <li>사진과 여행 위치 연결</li>
+      <li>음성 명령 인식 및 여행 기록 기능 수행</li>
+      <li>동행자 간 근거리 위치 공유 및 메시지 전달</li>
+      <li>여행 스토리·프레젠테이션·이미지·PDF·경로 파일 생성</li>
+      <li>광고 표시, 앱/SDK 성능 측정 및 부정 이용 방지</li>
+    </ul>
 
-        <div class="feature">
+    <h2>3. 저장 방식과 운영자 서버 전송 여부</h2>
+    <p>
+      MyTripNote의 여행 기록 데이터는 앱의 로컬 데이터베이스와 사용자의 기기 저장공간을 중심으로 관리됩니다.
+      운영자는 여행 제목, 이동 경로, 사진, 사진 위치, 음성인식 결과 등을 저장하기 위한 별도의 MyTripNote 서버를 운영하지 않습니다.
+    </p>
+    <p>
+      사진 촬영 시 원본 사진은 사용자의 기기 갤러리에 저장될 수 있으며,
+      앱은 해당 사진의 파일 경로와 여행 관련 정보를 로컬 데이터베이스에 저장할 수 있습니다.
+    </p>
 
-            <h3>Information Collection</h3>
+    <h2>4. 동행자 위치 공유</h2>
+    <p>
+      동행자 위치 공유 기능은 Google Play services의 Nearby Connections 기술을 사용합니다.
+      Nearby Connections는 Bluetooth, BLE, Wi‑Fi 등의 근거리 통신을 이용해 주변 기기와 직접 연결하고 데이터를 교환합니다.
+      연결된 기기 간 통신은 Google Nearby Connections의 보안 방식에 따라 처리됩니다.
+    </p>
+    <p>
+      Google Play services는 Nearby 기능 품질 개선을 위해 연결 성능 정보와 기기 모델, 국가,
+      빌드 버전, 앱 패키지명 등 일부 진단·기기 정보를 처리할 수 있습니다.
+      이 정보는 MyTripNote 운영자의 여행기록 서버로 전송되는 정보가 아닙니다.
+    </p>
 
-            <p>
+    <h2>5. 제3자 서비스 및 SDK</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>서비스</th>
+          <th>사용 목적</th>
+          <th>처리될 수 있는 정보</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google AdMob / Google Mobile Ads</td>
+          <td>광고 표시, 광고 성능 측정, 부정 이용 방지</td>
+          <td>IP 주소, 앱 이용 상호작용, 진단 정보, 광고/앱 관련 기기 식별자 등</td>
+        </tr>
+        <tr>
+          <td>Google Play services Nearby Connections</td>
+          <td>동행자 간 근거리 연결 및 데이터 교환</td>
+          <td>연결 성능 정보, 기기 모델, 국가, 빌드 버전, 앱 패키지명 등</td>
+        </tr>
+        <tr>
+          <td>Android/기기 음성인식 서비스</td>
+          <td>음성 명령을 텍스트로 변환</td>
+          <td>음성 입력 및 음성인식 처리에 필요한 정보가 서비스 제공자에게 전송될 수 있음</td>
+        </tr>
+        <tr>
+          <td>지도 서비스<br />(OpenStreetMap, Google Maps, Kakao Map, Naver Map)</td>
+          <td>지도 표시 및 여행 경로 시각화</td>
+          <td>지도 요청, 네트워크 정보, 표시 위치 등 서비스 제공에 필요한 정보가 처리될 수 있음</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      제3자 서비스가 처리하는 정보는 각 서비스 제공자의 개인정보처리방침과 이용약관의 적용을 받을 수 있습니다.
+      Google의 개인정보처리방침은
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>에서 확인할 수 있습니다.
+    </p>
 
-                MyTripNote may use GPS location,
-                photos, voice recordings and travel
-                information to provide travel recording
-                services.
+    <h2>6. 광고</h2>
+    <p>
+      MyTripNote는 Google AdMob을 이용해 광고를 표시할 수 있습니다.
+      앱에서 비개인 맞춤형 광고 설정을 사용하더라도 Google Mobile Ads SDK는 광고 제공,
+      분석 및 부정 이용 방지를 위해 IP 주소, 사용자 제품 상호작용, 진단 정보,
+      기기 또는 앱 관련 식별자 등을 처리할 수 있습니다.
+    </p>
 
-            </p>
+    <h2>7. SNS 및 외부 앱으로 공유</h2>
+    <p>
+      사용자가 공유 기능을 직접 선택하는 경우 여행 이미지, 여행 이야기 또는 기타 사용자가 선택한 콘텐츠가
+      사용자가 선택한 외부 앱이나 웹사이트로 전달될 수 있습니다.
+      이러한 전송은 사용자의 명시적인 공유 동작에 따라 이루어지며,
+      전송 이후에는 해당 외부 서비스의 개인정보처리방침이 적용됩니다.
+    </p>
 
-            <br>
+    <h2>8. 정보 보유 및 삭제</h2>
+    <p>
+      운영자는 여행 기록을 자체 서버에 보관하지 않습니다.
+      앱 내부의 로컬 데이터는 사용자가 앱 기능을 통해 삭제하거나,
+      Android 설정에서 MyTripNote의 앱 데이터를 삭제하거나,
+      앱을 제거할 때 기기에서 삭제할 수 있습니다.
+    </p>
+    <p>
+      다만 다음 정보는 앱 데이터 삭제와 별도로 남아 있을 수 있습니다.
+    </p>
+    <ul>
+      <li>기기 갤러리에 저장된 원본 사진</li>
+      <li>사용자가 Documents 등 외부 저장 위치로 내보낸 이미지, PDF, JSON 등의 파일</li>
+      <li>사용자가 직접 다른 앱이나 서비스로 공유한 콘텐츠</li>
+    </ul>
+    <p>
+      이러한 파일이나 공유 데이터의 삭제는 해당 기기 저장공간 또는 외부 서비스에서 사용자가 직접 수행해야 할 수 있습니다.
+    </p>
 
-            <h3>Personal Information</h3>
+    <h2>9. 앱 권한</h2>
+    <p>MyTripNote는 기능 제공을 위해 다음과 같은 Android 권한을 사용할 수 있습니다.</p>
+    <ul>
+      <li>정밀 위치 및 백그라운드 위치: 여행 경로 기록, 사진 위치 기록, 동행자 위치 공유</li>
+      <li>마이크: 음성 명령 및 음성인식</li>
+      <li>사진/미디어: 사진 선택 및 여행 기록 표시</li>
+      <li>Bluetooth 및 Nearby Wi‑Fi: 주변 동행자 기기 검색·연결·데이터 교환</li>
+      <li>알림 및 포그라운드 서비스: 여행 기록 기능의 지속 동작 상태 안내</li>
+      <li>인터넷: 지도, 광고, 음성인식 서비스 등 외부 서비스 이용</li>
+    </ul>
+    <p>
+      사용자는 Android 설정에서 권한을 변경하거나 철회할 수 있습니다.
+      필수 기능에 필요한 권한을 철회하면 일부 기능이 정상적으로 동작하지 않을 수 있습니다.
+    </p>
 
-            <p>
+    <h2>10. 아동의 개인정보</h2>
+    <p>
+      MyTripNote는 아동의 개인정보를 별도로 수집하기 위한 서비스를 운영하지 않습니다.
+      앱의 대상 연령 및 광고 설정은 Google Play에 등록된 실제 대상 사용자 설정과 일치하도록 운영합니다.
+    </p>
 
-                Personal information is used only
-                for providing the application's services.
+    <h2>11. 개인정보 보호 및 보안</h2>
+    <p>
+      운영자는 앱 기능에 필요한 범위에서만 권한과 데이터를 사용하도록 노력합니다.
+      운영자 서버에 여행 기록을 저장하지 않는 구조를 기본으로 하며,
+      외부 서비스로 전송되는 데이터는 해당 서비스가 제공하는 보안 통신 방식의 적용을 받습니다.
+    </p>
 
-            </p>
+    <h2>12. 개인정보처리방침 변경</h2>
+    <p>
+      앱 기능, 사용 SDK, 관련 법령 또는 Google Play 정책이 변경되는 경우 본 방침이 변경될 수 있습니다.
+      중요한 변경 사항이 있는 경우 앱 또는 공식 웹페이지를 통해 안내합니다.
+    </p>
 
-            <br>
+    <h2>13. 문의처</h2>
+    <p>
+      개발·운영: <strong>마이트립노트 (MyTripNote)</strong><br />
+      개인정보 문의: <a href="mailto:raview07@gmail.com">raview07@gmail.com</a>
+    </p>
 
-            <h3>Data Storage</h3>
-
-            <p>
-
-                Travel data is stored on the user's device.
-                If cloud synchronization is supported in the
-                future, users will be notified separately.
-
-            </p>
-
-            <br>
-
-            <h3>Contact</h3>
-
-            <p>
-
-                For privacy-related questions,
-                please contact the developer.
-
-            </p>
-
-        </div>
-
+    <div class="footer">
+      본 개인정보처리방침은 2026년 9월 27일부터 적용됩니다.
     </div>
-
-</section>
-
-<footer>
-
-    <div class="container">
-
-        <a href="index.html">
-
-            Home
-
-        </a>
-
-        &nbsp; | &nbsp;
-
-        <a href="contact.html">
-
-            Contact
-
-        </a>
-
-        <p>
-
-            Copyright © 2026 MyTripNote
-
-        </p>
-
-    </div>
-
-</footer>
-
+  </article>
+</main>
 </body>
-
 </html>
